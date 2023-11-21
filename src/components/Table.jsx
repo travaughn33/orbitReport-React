@@ -18,7 +18,7 @@ const Table = ({ sat }) => {
      <tbody>
 
 
-        {satData.map((data, id) => {
+        {sat.map((data, id) => {
       
         return (
           <tr key={id}>
@@ -27,11 +27,11 @@ const Table = ({ sat }) => {
             <td>{data.launchDate}</td>
             <td>{data.operational ? 'Active': 'Inactive'} </td>
 
-
+          
           </tr>
         )
       })}
-     
+
      </tbody>
    </table>
   );
